@@ -235,6 +235,9 @@ img {
 }
 
 /*----------------Class----------------*/
+.indent {
+  padding-bottom: 94px;
+}
 .my-team {
   background-color: #f5f4fa;
 }
