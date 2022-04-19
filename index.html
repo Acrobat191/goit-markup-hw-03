@@ -21,52 +21,55 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header conteiner">
-      <div class="logos">
-        <a href="./index.html" class="logotype link">
-          <span class="web-log">Web</span>Studio</a
-        >
-      </div>
-
-      <nav>
-        <ul class="navigation list">
-          <li class="nav-item">
-            <a href="./index.html" class="item link light">Студия</a>
-          </li>
-          <li class="nav-item">
-            <a href="./portfolio.html" class="item link">Портфолио</a>
-          </li>
-          <li class="nav-item"><a href="" class="item link">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="mail-tel list">
-        <li class="tel-item">
-          <a href="mailto:info@devstudio.com" class="mail link"
-            >info@devstudio.com</a
+    <header class="header">
+      <div class="conteiner header-item">
+        <div class="logos">
+          <a href="./index.html" class="logotype link">
+            <span class="web-log">Web</span>Studio</a
           >
-        </li>
-        <li class="tel-item">
-          <a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+        </div>
+
+        <nav>
+          <ul class="navigation list">
+            <li class="nav-item">
+              <a href="./index.html" class="item link light">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="item link">Портфолио</a>
+            </li>
+            <li class="nav-item"><a href="" class="item link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="mail-tel list">
+          <li class="tel-item">
+            <a href="mailto:info@devstudio.com" class="mail link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="tel-item">
+            <a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!--HERO-->
 
     <main>
-      <section class="ban conteiner">
-        <h1 class="baner">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="ban-btn">Заказать услугу</button>
+      <section class="conteiner">
+        <div class="hero">
+          <h1 class="baner">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="ban-btn">Заказать услугу</button>
+        </div>
       </section>
-
-      <h2 class="visually-hidden">Эффективные решения для вашего бизнеса</h2>
 
       <!-- WORK-->
 
-      <section>
+      <section class="work-section section">
+        <h2 class="visually-hidden">Эффективные решения для вашего бизнеса</h2>
         <div class="conteiner">
           <ul class="work list">
-            <li class="working section">
+            <li class="working">
               <h3 class="work-name">Внимание к деталям</h3>
               <p class="work-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -103,7 +106,7 @@
       <!--CLASS-->
 
       <section class="class-photo">
-        <div class="conteiner indent">
+        <div class="indent conteiner">
           <h2 class="class-photos">Чем мы занимаемся</h2>
           <ul class="photo list">
             <li class="class-item">
@@ -121,33 +124,41 @@
 
       <!--TEAM-->
 
-      <section>
-        <div class="conteiner my-team section">
+      <section class="conteiner">
+        <div class="my-team section">
           <h2 class="team-type">Наша команда</h2>
 
           <ul class="team list">
             <li class="team-item">
               <img src="./img/img1.jpg" alt="image" width="270" />
-              <h3 class="team-name">Игорь Демьяненко</h3>
-              <p lang="en" class="team-text">Product Designer</p>
+              <div class="team-cards">
+                <h3 class="team-name">Игорь Демьяненко</h3>
+                <p lang="en" class="team-text">Product Designer</p>
+              </div>
             </li>
 
             <li class="team-item">
               <img src="./img/img2.jpg" alt="image" width="270" />
-              <h3 class="team-name">Ольга Репина</h3>
-              <p lang="en" class="team-text">Frontend Developer</p>
+              <div class="team-cards">
+                <h3 class="team-name">Ольга Репина</h3>
+                <p lang="en" class="team-text">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="team-item">
               <img src="./img/img3.jpg" alt="image" width="270" />
-              <h3 class="team-name">Николай Тарасов</h3>
-              <p lang="en" class="team-text">Marketing</p>
+              <div class="team-cards">
+                <h3 class="team-name">Николай Тарасов</h3>
+                <p lang="en" class="team-text">Marketing</p>
+              </div>
             </li>
 
             <li class="team-item">
               <img src="./img/img4.jpg" alt="image" width="270" />
-              <h3 class="team-name">Михаил Ермаков</h3>
-              <p lang="en" class="team-text">UI Designer</p>
+              <div class="team-cards">
+                <h3 class="team-name">Михаил Ермаков</h3>
+                <p lang="en" class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

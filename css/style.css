@@ -4,12 +4,15 @@
   --text-color: #757575;
   --button-color: #2196f3;
   --footer-text: #ffffff99;
+  --hero: #2f303a;
+  --portfolio-list: #eeeeee;
+  --button-portfolio: #f5f4fa;
 }
 
 body {
   font-family: roboto, Tahoma, sans-serif;
   background-color: hsl(0, 0%, 100%);
-  color: #212121;
+  color: var(--name-color);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -28,14 +31,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
+h6,
 ul,
 ol {
-  padding-left: 0;
   margin: 0;
+  padding-left: 0;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -46,17 +48,22 @@ ol {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
   /* outline: 1px solid red; */
 }
 img {
   display: block;
 }
 /*---------------Header----------------*/
+
 .header {
   display: flex;
-  height: 80px;
-  align-items: center;
   border-bottom: 1px solid #ececec;
+  align-items: center;
+}
+.header-item {
+  display: flex;
+  align-items: center;
 }
 .item,
 .mail,
@@ -69,19 +76,10 @@ img {
 .mail-tel,
 .navigation {
   display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0;
 }
 
 .navigation .nav-item:not(:last-child) {
   margin-right: 40px;
-}
-.logos {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-left: 0px;
-  margin-right: 93px;
 }
 
 .web-log {
@@ -96,11 +94,14 @@ img {
   color: var(--button-color);
 }
 .logotype {
+  margin-right: 93px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
 
   letter-spacing: 0.03em;
 
@@ -119,8 +120,7 @@ img {
   color: var(--button-color);
 }
 .mail-tel {
-  flex-grow: 1;
-  justify-content: flex-end;
+  margin-left: 350px;
 }
 .tel-item + .tel-item {
   margin-left: 50px;
@@ -143,34 +143,19 @@ img {
   line-height: 1.71;
   letter-spacing: 0.02em;
 
-  color: var(--name-color);
+  color: var(--text-color);
 }
 
 .mail:hover,
 .mail:focus {
   color: var(--button-color);
 }
-
-/*----------------HERO----------------*/
 .light {
   color: var(--button-color);
 }
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+/*----------------HERO----------------*/
 
 .baner {
-  padding: 200px 252px 0px 252px;
   margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 900;
@@ -183,8 +168,9 @@ img {
 
   color: var(--header-color);
 }
-.ban {
-  background-color: #2f303a;
+.hero {
+  padding: 200px 252px 0px 252px;
+  background-color: var(--hero);
   padding-bottom: 200px;
   margin: 0 auto;
   text-align: center;
@@ -202,12 +188,23 @@ img {
   border-radius: 4px;
   width: 200px;
   height: 50px;
+  border: 0;
 }
 
 /*----------------work----------------*/
-.working {
-  padding-top: 94px;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
 .work .working:not(:last-child) {
   margin-right: 30px;
 }
@@ -243,7 +240,6 @@ img {
 }
 .photo .class-item:not(:last-child) {
   margin-right: 30px;
-  display: block;
 }
 
 .class-photos {
@@ -283,6 +279,8 @@ img {
 }
 
 .team-name {
+  margin-bottom: 10px;
+  padding-top: 30px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -292,6 +290,7 @@ img {
 }
 
 .team-text {
+  padding-bottom: 30px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -309,9 +308,59 @@ img {
 }
 
 /*----------------buttons----------------*/
+
+.section-button {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.oll {
+  width: 73px;
+  height: 38px;
+  left: 495px;
+  top: 174px;
+
+  background: var(--button-portfolio);
+}
+.web {
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+
+  background: var(--button-portfolio);
+  border-radius: 4px;
+}
+.soft {
+  width: 145px;
+  height: 38px;
+  left: 712px;
+  top: 174px;
+
+  background: var(--button-portfolio);
+  border-radius: 4px;
+}
+
+.marketing {
+  width: 130px;
+  height: 38px;
+  left: 976px;
+  top: 174px;
+
+  background: var(--button-portfolio);
+  border-radius: 4px;
+}
+
+.design {
+  width: 103px;
+  height: 38px;
+  left: 865px;
+  top: 174px;
+
+  background: var(--button-portfolio);
+  border-radius: 4px;
+}
 .buttons {
   display: flex;
-  padding-bottom: 50px;
   justify-content: center;
 }
 .buttons .nav-portfolio:not(:last-child) {
@@ -331,7 +380,7 @@ img {
 }
 .button:hover {
   color: #ffffff;
-  background: #2196f3;
+  background: var(--button-color);
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -340,11 +389,11 @@ img {
 
 /*--------------portfolio-list----------------*/
 .portfolio-list {
-  padding-bottom: 64px;
+  padding-bottom: 94px;
 }
 .cards {
   padding: 20px 24px 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--portfolio-list);
 }
 .photo-portfolio {
   display: flex;
@@ -357,6 +406,10 @@ img {
 }
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.photo-portfolio .portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .portfolio-neme {
@@ -378,7 +431,7 @@ img {
 
 .footer {
   margin: 0 auto;
-  background: #2f303a;
+  background: var(--hero);
 }
 .logotype-footer {
   font-family: "Raleway";
