@@ -67,12 +67,14 @@ img {
 }
 .item,
 .mail,
-.tel,
-.tel-item {
+.tel {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
+.tel-item {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
 .mail-tel,
 .navigation {
   display: flex;
@@ -120,7 +122,7 @@ img {
   color: var(--button-color);
 }
 .mail-tel {
-  margin-left: 350px;
+  margin-left: auto;
 }
 .tel-item + .tel-item {
   margin-left: 50px;
@@ -161,19 +163,18 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
-  min-width: 696px;
 
   color: var(--header-color);
 }
-.hero {
-  padding: 200px 252px 0px 252px;
-  background-color: var(--hero);
-  padding-bottom: 200px;
-  margin: 0 auto;
+.hero-text {
+  padding: 200px 0;
+  text-transform: uppercase;
+  width: 696px;
   text-align: center;
+}
+.hero {
+  background-color: var(--hero);
 }
 .ban-btn {
   display: inline-block;
@@ -223,7 +224,7 @@ img {
 }
 
 .work-text {
-  width: 275px;
+  width: 270px;
 
   font-weight: 400;
   line-height: 1.71;
@@ -232,9 +233,6 @@ img {
 }
 
 /*----------------Class----------------*/
-.indent {
-  padding-bottom: 94px;
-}
 .my-team {
   background-color: #f5f4fa;
 }
@@ -246,6 +244,7 @@ img {
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
+  padding-bottom: 94px;
 
   font-weight: 700;
   font-size: 36px;
@@ -262,10 +261,10 @@ img {
 .team {
   display: flex;
 }
-
 .team-type {
   margin-bottom: 50px;
   text-align: center;
+  background-color: var(--button-portfolio);
 }
 .team .team-item:not(:last-child) {
   margin-right: 30px;
@@ -277,10 +276,12 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+.team-cards {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-name {
   margin-bottom: 10px;
-  padding-top: 30px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -290,7 +291,6 @@ img {
 }
 
 .team-text {
-  padding-bottom: 30px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -310,8 +310,8 @@ img {
 /*----------------buttons----------------*/
 
 .section-button {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
 .oll {
   width: 73px;
@@ -418,6 +418,8 @@ img {
 .footer {
   margin: 0 auto;
   background: var(--hero);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logotype-footer {
   font-family: "Raleway";
@@ -427,12 +429,10 @@ img {
   line-height: 31px;
 
   letter-spacing: 0.03em;
-
   color: #ffffff;
 }
 
 .footer-logo {
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 .adress {
@@ -443,9 +443,6 @@ img {
 }
 .adress-list .adress-item:last-child {
   margin-bottom: 0px;
-}
-.adress-list {
-  padding-bottom: 60px;
 }
 .map {
   font-weight: 400;
