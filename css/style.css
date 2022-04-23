@@ -48,8 +48,6 @@ ol {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  /* outline: 1px solid red; */
 }
 img {
   display: block;
@@ -68,9 +66,11 @@ img {
 .item,
 .mail,
 .tel {
+  content: icon;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .tel-item {
   padding-top: 28px;
   padding-bottom: 28px;
@@ -168,13 +168,13 @@ img {
   color: var(--header-color);
 }
 .hero-text {
-  padding: 200px 0;
   text-transform: uppercase;
   width: 696px;
   text-align: center;
 }
 .hero {
   background-color: var(--hero);
+  padding: 200px 0;
 }
 .ban-btn {
   display: inline-block;
@@ -238,13 +238,13 @@ img {
 }
 .photo .class-item:not(:last-child) {
   margin-right: 30px;
+  padding-bottom: 94px;
 }
 
 .class-photos {
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
-  padding-bottom: 94px;
 
   font-weight: 700;
   font-size: 36px;
@@ -261,11 +261,14 @@ img {
 .team {
   display: flex;
 }
-.team-type {
-  margin-bottom: 50px;
+.comand {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
   text-align: center;
-  background-color: var(--button-portfolio);
+  margin-bottom: 50px;
 }
+
 .team .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -299,7 +302,6 @@ img {
   color: var(--text-color);
 }
 .team-type {
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -307,10 +309,13 @@ img {
   color: var(--name-color);
 }
 
+/*----------------MAIN----------------*/
+.main-portfolio {
+}
+
 /*----------------buttons----------------*/
 
 .section-button {
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .oll {
@@ -374,9 +379,7 @@ img {
 }
 
 /*--------------portfolio-list----------------*/
-.portfolio-list {
-  padding-bottom: 94px;
-}
+
 .cards {
   padding: 20px 24px 20px 24px;
   border: 1px solid var(--portfolio-list);
